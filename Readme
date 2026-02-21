@@ -1,0 +1,1328 @@
+"Digital Thriving Hub
+
+A Full-Stack Digital Wellbeing, Cybersecurity, and Student Utility Ecosystem
+
+
+---
+
+1. Vision
+
+
+
+Digital Thriving Hub is a mobile-first, full-stack web application designed to help students and individuals transition from compulsive digital consumption to intentional, productive, and secure digital behavior. It integrates digital wellbeing tools, cybersecurity complaint processing, academic productivity systems, institutional dashboards, and community-based reinforcement into a single ecosystem.
+
+The system is designed not merely as a restriction tool, but as a Digital Governance Platform that builds long-term self-regulation.
+
+
+---
+
+2. Core Objectives
+
+
+3. Break unhealthy digital scrolling cycles.
+
+
+4. Provide structured focus and productivity systems.
+
+
+5. Enable secure and structured cybersecurity complaint submission.
+
+
+6. Deliver student utility services (jobs, weather, announcements).
+
+
+7. Support institutional oversight and reporting.
+
+
+8. Maintain privacy, transparency, and data integrity.
+
+
+
+
+---
+
+3. Technology Stack
+
+
+
+Frontend:
+
+React (Vite or Next.js)
+
+Tailwind CSS (mobile-first design)
+
+Progressive Web App (PWA)
+
+Service Workers for caching
+
+Backend:
+
+Node.js + Express
+
+MongoDB (MongoDB Atlas)
+
+JWT Authentication
+
+Role-based middleware
+
+Optional Integrations:
+
+Firebase for push notifications
+
+Redis for caching
+
+Cloudinary for file uploads
+
+OpenWeather API for weather updates
+
+Deployment:
+
+Frontend: Vercel
+
+Backend: Render or Railway
+
+Database: MongoDB Atlas
+
+
+---
+
+4. User Roles
+
+
+
+User:
+
+Register, login, logout
+
+Set digital goals
+
+Start focus sessions
+
+Submit cybersecurity complaints
+
+Track complaint status
+
+View job notifications
+
+View weather updates
+
+View local announcements
+
+Edit profile
+
+Admin:
+
+View and manage complaints
+
+Update complaint status
+
+Post announcements
+
+Post job updates
+
+Moderate community content
+
+View analytics dashboards
+
+Expanded Roles:
+
+College Admin
+
+Cyber Cell Officer
+
+Student Moderator
+
+
+---
+
+5. Database Architecture
+
+
+
+Users Collection:
+
+name
+
+phone
+
+address
+
+password (bcrypt hashed)
+
+role (admin/user)
+
+focusPreferences
+
+languagePreference
+
+digitalHygieneScore
+
+createdAt
+
+Complaints Collection:
+
+userId
+
+category
+
+description
+
+attachments
+
+status
+
+adminNotes
+
+createdAt
+
+Jobs Collection:
+
+title
+
+description
+
+link
+
+expiryDate
+
+postedBy
+
+Announcements Collection:
+
+title
+
+content
+
+region
+
+createdAt
+
+FocusLogs Collection:
+
+userId
+
+subjectTag
+
+minutesSaved
+
+date
+
+ReflectionLogs Collection:
+
+userId
+
+trigger
+
+mood
+
+dailyReflection
+
+date
+
+
+---
+
+6. Behavioral Intelligence Layer
+
+
+
+Adaptive Friction Engine:
+
+Dynamically adjusts intervention intensity based on relapse patterns.
+
+Trigger Mapping:
+
+Users log emotional triggers (bored, stressed, lonely, avoiding work).
+
+Dashboard correlates mood with screen behavior.
+
+Micro Reflection Prompts:
+
+End-of-day reflection questions.
+
+Monthly behavior pattern summaries.
+
+Distraction Journal:
+
+Users log what they were avoiding.
+
+Digital Clarity Score:
+
+Composite behavioral metric combining streaks, mood stability, and focus consistency.
+
+
+---
+
+7. Academic Productivity Layer
+
+
+
+Pomodoro Focus Timer:
+
+Tagged by subject (e.g., Math, Programming, GATE prep).
+
+Exam Countdown Widget:
+
+Displays days remaining and recommended study hours.
+
+Quick Notes Vault:
+
+Offline markdown notes system.
+
+Virtual Study Rooms:
+
+Group timed focus sessions.
+
+Visible participation count.
+
+Subject Analytics Dashboard:
+
+Weekly subject-hour distribution.
+
+
+---
+
+8. Cybersecurity System Expansion
+
+
+
+Complaint Categories:
+
+Phishing
+
+Account hacking
+
+Online harassment
+
+Financial fraud
+
+Fake job scam
+
+Complaint Workflow:
+
+1. User submits complaint.
+
+
+2. Unique ID generated.
+
+
+3. Admin review.
+
+
+4. Status update.
+
+
+5. User notification.
+
+
+
+Additional Features:
+
+Scam Awareness Feed
+
+Phishing Simulation Training
+
+Password Strength Analyzer
+
+Data Breach Check Integration
+
+Digital Hygiene Score
+
+
+---
+
+9. Student Utility Layer
+
+
+
+Job Notifications:
+
+Internship postings
+
+Campus drives
+
+Government exam alerts
+
+Bookmark feature
+
+Weather Updates:
+
+Temperature
+
+Rain alerts
+
+Cached API fallback
+
+Local Announcements:
+
+Region-based updates
+
+Emergency Resources:
+
+Cyber helpline numbers
+
+Mental health support contacts
+
+
+---
+
+10. Community Layer
+
+
+
+Anonymous Student Wall:
+
+Progress posts
+
+Milestone sharing
+
+Streak Badges:
+
+7-day focus streak
+
+No-scroll mornings
+
+Complaint resolved
+
+Complaint Transparency Dashboard:
+
+Monthly resolution metrics
+
+Referral System:
+
+Share milestone graphics
+
+
+---
+
+11. Mental Health Safeguards
+
+
+
+Mood Tracker:
+
+One-tap daily mood logging.
+
+Behavior-Mood Correlation Dashboard:
+
+Visual patterns of scrolling vs emotional state.
+
+Contextual Support Alerts:
+
+Suggest resources if negative patterns persist.
+
+
+---
+
+12. Offline-First Architecture
+
+
+
+Service Worker Caching:
+
+Static assets
+
+Last dashboard state
+
+Saved jobs
+
+Complaint drafts
+
+IndexedDB Storage:
+
+Notes vault
+
+Draft complaints
+
+Background Sync API:
+
+Syncs when connection restored.
+
+Offline Banner Notification.
+
+
+---
+
+13. Security Architecture
+
+
+
+Password hashing with bcrypt
+
+JWT expiration policies
+
+Rate limiting
+
+Input validation
+
+File upload restrictions
+
+HTTPS enforcement
+
+CSRF protection
+
+End-to-end encryption for complaint descriptions
+
+Data export and delete account options
+
+
+---
+
+14. Smart Notification System
+
+
+
+Contextual Notifications:
+
+Habit-based reminders
+
+Behavioral Reinforcement Alerts:
+
+Streak continuation
+
+Utility Alerts:
+
+Weather changes
+
+Job deadlines
+
+
+---
+
+15. Institutional Dashboard
+
+
+
+College-Level Analytics:
+
+Average screen time trends
+
+Complaint category distribution
+
+Security awareness participation
+
+Exportable Reports (PDF):
+
+Cyber audit summaries
+
+Monthly engagement reports
+
+
+---
+
+16. Long-Term Evolution Mode
+
+
+
+After 90 days of consistent discipline:
+
+Reduced intervention prompts
+
+Optional reminder minimization
+
+Transition to mastery interface
+
+The system progressively shifts from external enforcement to internal discipline.
+
+
+---
+
+17. User Interface Principles
+
+
+
+Mobile-first design
+
+Large buttons
+
+High contrast visuals
+
+Simple English
+
+Regional language toggle
+
+Dark mode support
+
+Minimal clutter
+
+Primary Dashboard Buttons:
+
+1. Start Focus Session
+
+
+2. File Cyber Complaint
+
+
+3. Job Updates
+
+
+4. Announcements
+
+
+
+
+---
+
+18. Core Philosophy
+
+
+
+Digital Thriving Hub is not a blocking tool. It is a structured digital governance ecosystem.
+
+It integrates behavior design, cybersecurity protection, academic productivity, community reinforcement, and institutional transparency into a unified system.
+
+The ultimate goal is user independence — where the application becomes a guide rather than a constraint.
+
+
+---
+
+19. Complete UI Screen-by-Screen Specification
+
+
+
+19.1 Landing Page (Public)
+
+Buttons:
+
+Register
+
+Login
+
+View Safety Resources
+
+Change Language
+
+Components:
+
+Hero section (Mission statement)
+
+Feature overview cards
+
+Footer (Privacy Policy, Terms, Contact)
+
+
+---
+
+19.2 Registration Page
+
+Fields:
+
+Name
+
+Phone Number
+
+Address
+
+Password
+
+Confirm Password
+
+Language Preference
+
+Buttons:
+
+Create Account
+
+Back to Login
+
+Backend Route: POST /api/auth/register
+
+
+---
+
+19.3 Login Page
+
+Fields:
+
+Phone Number
+
+Password
+
+Buttons:
+
+Login
+
+Forgot Password
+
+Backend Route: POST /api/auth/login
+
+
+---
+
+19.4 User Dashboard (After Login)
+
+Top Section:
+
+Greeting (Name)
+
+Today’s Focus Goal
+
+Streak Counter
+
+Main Action Buttons (Large UI Blocks):
+
+1. Start Focus Session
+
+
+2. File Cyber Complaint
+
+
+3. Job Updates
+
+
+4. Announcements
+
+
+
+Secondary Widgets:
+
+Weather Card
+
+Time Saved Summary
+
+Mood Log Button
+
+Backend Routes: GET /api/dashboard GET /api/weather GET /api/focus/logs
+
+
+---
+
+19.5 Focus Session Screen
+
+Components:
+
+Timer Display
+
+Subject Tag Dropdown
+
+End Session Button
+
+Pause Button
+
+On Completion:
+
+Reflection Prompt
+
+Save Log
+
+Backend Routes: POST /api/focus/start POST /api/focus/end
+
+
+---
+
+19.6 Cyber Complaint Page
+
+Fields:
+
+Category Dropdown
+
+Description Textarea
+
+File Upload
+
+Buttons:
+
+Submit Complaint
+
+Save Draft
+
+Backend Routes: POST /api/complaints GET /api/complaints/user
+
+Admin Routes: GET /api/admin/complaints PATCH /api/admin/complaints/:id
+
+
+---
+
+19.7 Jobs Page
+
+Features:
+
+Job List
+
+Filter by Category
+
+Bookmark Button
+
+Backend Routes: GET /api/jobs POST /api/admin/jobs DELETE /api/admin/jobs/:id
+
+
+---
+
+19.8 Announcements Page
+
+Features:
+
+Announcement Feed
+
+Region Filter
+
+Backend Routes: GET /api/announcements POST /api/admin/announcements
+
+
+---
+
+19.9 Profile Page
+
+Fields:
+
+Edit Name
+
+Edit Address
+
+Change Password
+
+View Digital Hygiene Score
+
+Buttons:
+
+Save Changes
+
+Delete Account
+
+Export My Data
+
+Backend Routes: PUT /api/users/profile DELETE /api/users GET /api/users/export
+
+
+---
+
+19.10 Admin Dashboard
+
+Sections:
+
+Complaint Overview
+
+User Analytics
+
+Engagement Metrics
+
+Report Export (PDF)
+
+Backend Routes: GET /api/admin/analytics GET /api/admin/reports
+
+
+---
+
+20. Full Backend Architecture
+
+
+
+Folder Structure:
+
+controllers/
+
+routes/
+
+models/
+
+middleware/
+
+services/
+
+utils/
+
+Core Middleware:
+
+authMiddleware (JWT verification)
+
+roleMiddleware (admin/user access)
+
+rateLimiter
+
+errorHandler
+
+Security Utilities:
+
+bcrypt password hashing
+
+JWT token generator
+
+Input validation (Joi or express-validator)
+
+
+---
+
+21. State Management (Frontend)
+
+
+
+Recommended:
+
+Context API or Redux Toolkit
+
+Global States:
+
+Auth State
+
+User Profile
+
+Focus Status
+
+Notifications
+
+Language Preference
+
+
+---
+
+22. Performance Optimization
+
+
+
+Lazy loading routes
+
+Code splitting
+
+API response caching
+
+Image compression
+
+Background sync for offline data
+
+
+---
+
+23. Progressive Web App Requirements
+
+
+
+Service Worker registration
+
+Manifest.json
+
+Offline fallback page
+
+Install prompt support
+
+
+---
+
+This now includes complete UI specification, button-level definitions, API routes, middleware structure, state management, and deployment-ready architecture.
+
+
+---
+
+24. Complete Functional Requirement Specification (AI-Ready Prompt Format)
+
+
+
+This section ensures that if this document is used as an implementation prompt, no functional layer is omitted.
+
+24.1 Authentication & Authorization Requirements
+
+Authentication:
+
+JWT-based authentication (Access token + Refresh token)
+
+Access token expiry: 15–30 minutes
+
+Refresh token stored securely (HttpOnly cookie)
+
+Logout invalidates refresh token (blacklist or rotation strategy)
+
+Password Rules:
+
+Minimum 8 characters
+
+At least one uppercase, one lowercase, one number
+
+Client-side + server-side validation
+
+Forgot Password Flow:
+
+Request OTP via phone/email
+
+OTP expiry (5 minutes)
+
+Reset password endpoint
+
+Role-Based Access Control:
+
+Middleware validates role before route access
+
+Admin-only routes protected
+
+College-admin scoped access (optional future support)
+
+
+---
+
+24.2 Complete API Endpoint Map
+
+Auth: POST /api/auth/register POST /api/auth/login POST /api/auth/logout POST /api/auth/refresh POST /api/auth/forgot-password POST /api/auth/reset-password
+
+User: GET /api/users/profile PUT /api/users/profile DELETE /api/users GET /api/users/export
+
+Focus: POST /api/focus/start POST /api/focus/pause POST /api/focus/end GET /api/focus/logs GET /api/focus/stats
+
+Reflections: POST /api/reflections GET /api/reflections
+
+Complaints: POST /api/complaints GET /api/complaints/user GET /api/complaints/:id
+
+Admin Complaints: GET /api/admin/complaints PATCH /api/admin/complaints/:id DELETE /api/admin/complaints/:id
+
+Jobs: GET /api/jobs POST /api/admin/jobs PUT /api/admin/jobs/:id DELETE /api/admin/jobs/:id
+
+Announcements: GET /api/announcements POST /api/admin/announcements PUT /api/admin/announcements/:id DELETE /api/admin/announcements/:id
+
+Analytics: GET /api/admin/analytics GET /api/admin/reports
+
+Weather: GET /api/weather
+
+Community: POST /api/community/posts GET /api/community/posts DELETE /api/community/posts/:id
+
+
+---
+
+24.3 Detailed UI Component Inventory
+
+Navigation:
+
+Top Navbar (Logo, Language Toggle, Profile Icon)
+
+Bottom Mobile Navigation Bar (Dashboard, Focus, Complaints, Jobs, Profile)
+
+Reusable Components:
+
+Large Primary Button
+
+Secondary Button
+
+Card Component
+
+Modal Component
+
+Toast Notification
+
+Confirmation Dialog
+
+Loading Spinner
+
+Empty State Component
+
+Error State Component
+
+Accessibility Requirements:
+
+Minimum 16px font size
+
+High contrast mode support
+
+ARIA labels for screen readers
+
+Keyboard navigability
+
+
+---
+
+24.4 Dashboard Detailed Layout Specification
+
+Section 1: Status Overview
+
+Greeting with user name
+
+Streak Counter Badge
+
+Today’s Saved Minutes
+
+Mood Indicator Button
+
+Section 2: Primary Actions (Large Buttons)
+
+Start Focus Session
+
+File Cyber Complaint
+
+View Job Updates
+
+View Announcements
+
+Section 3: Informational Widgets
+
+Weather Card
+
+Upcoming Exam Countdown
+
+Weekly Focus Graph
+
+Complaint Status Summary
+
+Section 4: Quick Utilities
+
+Quick Note Add
+
+Log Mood
+
+View Hygiene Score
+
+
+---
+
+24.5 Focus Session Logic Specification
+
+States:
+
+Idle
+
+Running
+
+Paused
+
+Completed
+
+Rules:
+
+Minimum session: 5 minutes
+
+Auto-save every 60 seconds
+
+On tab switch (web), show reminder modal
+
+Post-Session Flow:
+
+Reflection prompt
+
+Mood check
+
+Save to FocusLogs collection
+
+Analytics Computation:
+
+Total weekly minutes
+
+Subject-wise distribution
+
+Streak calculation
+
+
+---
+
+24.6 Complaint Workflow State Machine
+
+States:
+
+Draft
+
+Submitted
+
+Under Review
+
+Escalated
+
+Resolved
+
+Rejected
+
+Notifications:
+
+On submission
+
+On status change
+
+On resolution
+
+Admin Actions:
+
+Add notes
+
+Change status
+
+Request additional information
+
+Audit Log:
+
+Track every status change
+
+Timestamp + admin ID
+
+
+---
+
+24.7 Data Privacy & Compliance Requirements
+
+All complaint descriptions encrypted before DB storage
+
+Personally identifiable information minimized
+
+User data export in JSON format
+
+GDPR-style delete confirmation flow
+
+Activity log visible to user
+
+
+---
+
+24.8 Notification Engine Logic
+
+Types:
+
+Push notifications
+
+In-app banners
+
+Email (optional)
+
+Trigger Examples:
+
+Focus streak about to break
+
+Complaint status update
+
+Job deadline approaching
+
+Severe weather alert
+
+Notification Throttling:
+
+Max 3 per day
+
+Quiet hours (10 PM–6 AM)
+
+
+---
+
+24.9 Offline Mode Detailed Behavior
+
+Cached:
+
+Static assets
+
+Dashboard snapshot
+
+Saved jobs
+
+Draft complaints
+
+Notes
+
+Offline Actions Allowed:
+
+Create complaint draft
+
+Write notes
+
+View cached jobs
+
+Sync Rules:
+
+Background sync on reconnect
+
+Conflict resolution (latest timestamp wins)
+
+
+---
+
+24.10 Analytics & Metrics Definitions
+
+User-Level Metrics:
+
+Total focus hours
+
+Weekly average
+
+Digital Hygiene Score
+
+Mood stability index
+
+Admin-Level Metrics:
+
+Complaint resolution time (average)
+
+Most common complaint category
+
+Monthly active users
+
+Engagement rate
+
+
+---
+
+24.11 Performance & Scaling Requirements
+
+API response time < 500ms
+
+Image upload limit: 5MB
+
+Lazy load non-critical components
+
+CDN for static assets
+
+Horizontal scaling supported
+
+
+---
+
+24.12 Logging & Monitoring
+
+Backend Logging:
+
+Request logs
+
+Error logs
+
+Security alerts
+
+Monitoring Tools:
+
+Uptime monitoring
+
+Error tracking (e.g., Sentry)
+
+
+---
+
+24.13 Testing Requirements
+
+Unit Tests:
+
+Auth logic
+
+Focus timer logic
+
+Complaint status updates
+
+Integration Tests:
+
+Login → Dashboard flow
+
+Complaint submission flow
+
+Manual QA Checklist:
+
+Mobile responsiveness
+
+Offline simulation
+
+Role restriction validation
+
+
+---
+
+This document now defines:
+
+All UI screens
+
+All buttons
+
+All routes
+
+All state transitions
+
+All backend requirements
+
+All security layers
+
+All offline behavior
+
+All notification logic
+
+All analytics definitions
+
+All scalability constraints
+
+It is now implementation-complete and AI prompt ready.
+
+The document is now expanded to implementation-complete level with detailed logic, state machines, API contracts, security rules, analytics definitions, offline behavior, and testing requirements"
+
+Edit the above pdf fully to the given information. Ask me any more questions if you have related to completing the above pdf
